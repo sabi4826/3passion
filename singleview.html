@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Single view</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            /*            background-color: #ec9434;*/
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        #liste {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-gap: 1em;
+            margin: 2em;
+        }
+
+        .retter {
+            padding: 1em;
+            border-radius: 1em;
+        }
+
+        header {
+            background-color: transparent;
+            display: flex;
+            /*            justify-content: center;*/
+            position: sticky;
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+            z-index: 20;
+        }
+
+        .logo {
+            margin-right: 69vw;
+        }
+
+        nav {
+            display: flex;
+            /*            background-color: #ec9434;*/
+
+            /*
+            top: 0;
+            width: 100%;
+*/
+            right: 0;
+            position: fixed;
+        }
+
+
+        nav a {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        nav a:link {
+            /*            color: black;*/
+            text-decoration: none;
+        }
+
+        nav a:visited {
+            /*            color: black;*/
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            /*            color: #96021e;*/
+            text-decoration: none;
+        }
+
+        h2,
+        h3 {
+            font-family: 'roboto';
+            /*            color: #39281c;*/
+            text-align: justify;
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        h4 {
+            /*            color: #8b4f0d;*/
+            text-align: end;
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            border-radius: 50%;
+            /*            color: #7c071b;*/
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 48px;
+            width: 48px;
+        }
+
+        button:hover {
+            /*
+            background-color: #7c071b;
+            color: #ec9434;
+*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <article class="mad">
+        <button>←</button>
+        <img src="" alt="" class="billede">
+        <h2 class="fun_fact"></h2>
+        <h2 class="landet_er_kendt_for"></h2>
+        <h2 class="antal_km"></h2>
+        <h3 class="ferietype"></h3>
+        <h4 class="lang_beskrivelse"></h4>
+    </article>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get("id");
+
+        const medieurl = "https://babushka-dd8a.restdb.io/media/";
+        let ret;
+
+        const options = {
+            "x-apikey": "600ec2fb1346a1524ff12de4"
+        }
+        console.log("ID", id);
+        document.addEventListener("DOMContentLoaded", hentData);
+
+        async function hentData() {
+            const JSONData = await fetch(`https://babushka-dd8a.restdb.io/rest/menu/${id}`, {
+                headers: options
+            });
+            ret = await JSONData.json();
+
+            console.log("Retter", land);
+            visRet(land);
+        }
+
+        function visRet() {
+            document.querySelector(".fun_fact").textContent = land.fun_fact;
+            document.querySelector(".landet_er_kendt_for").textContent = land.landet_er_kendt_for;
+            document.querySelector(".antal_km").textContent = (`antal_km: ${land.antal_km}KM`);
+            document.querySelector(".ferietype").textContent = land.ferietype;
+            document.querySelector(".lang_beskrivelse").textContent = land.langbeskrivelse;
+            document.querySelector(".billede").src = medieurl + land.billede;
+            document.querySelector("button").addEventListener("click", tilbage)
+        }
+
+        function tilbage() {
+            history.back();
+        }
+
+    </script>
+</body>
+
+</html>
