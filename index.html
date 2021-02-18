@@ -2,40 +2,43 @@
 <html lang="da">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rejsepanelet</title>
-	<link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejsepanelet</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-	<header>
-		<h1>Rejsepanelet</h1>
-	</header>
-	<main>
-		<img src="" alt="splashbillede">
-		<h2>Hvor skal vi hen?</h2>
-		<nav id="filter_knapper">
-			<button data-kontinent="alle" class="valgt">Alle</button>
-			<button data-kontinent="Europa">Europa</button>
-			<button data-kontinent="Asien">Asien</button>
-			<button data-kontinent="Sydamerika">Sydamerika</button>
-			<button data-kontinent="Nordamerika">Nordamerika</button>
-			<button data-kontinent="Australien">Australien</button>
-			<button data-kontinent="Afrika">Afrika</button>
-			<button data-kontinent="Antarktis">Antarktis</button>
-		</nav>
+    <header>
+        <h1>Rejsepanelet</h1>
+    </header>
+    <main>
+        <img src="" alt="splashbillede">
+        <h2>Hvor skal vi hen?</h2>
+        <nav id="filter_knapper">
+            <button data-kontinent="alle" class="valgt">Alle</button>
+            <button data-kontinent="Europa">Europa</button>
+            <button data-kontinent="Asien">Asien</button>
+            <button data-kontinent="Sydamerika">Sydamerika</button>
+            <button data-kontinent="Nordamerika">Nordamerika</button>
+            <button data-kontinent="Australien">Australien</button>
+            <button data-kontinent="Afrika">Afrika</button>
+            <button data-kontinent="Antarktis">Antarktis</button>
+        </nav>
 
-		<section id="liste"></section>
+        <section id="liste"></section>
 
-		<template>
-			<article class="land">
-				<h3 class="h2_land"></h3>
-				<img src="" alt="landets foto" class="foto">
-				<p class="kort_beskrivelse"></p>
-			</article>
-		</template>
-	</main>
+        <template>
+            <article class="land">
+                <h3 class="h2_land"></h3>
+                <img src="" alt="landets foto" class="foto">
+                <p class="kort_beskrivelse"></p>
+                <button class="info">Læs mere</button>
+            </article>
+        </template>
+    </main>
 
-	<script src="index.js"></script>
-</body></html>
+    <script src="index.js"></script>
+</body>
+
+</html>
