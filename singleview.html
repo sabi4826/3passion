@@ -38,7 +38,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get("id");
 
-        const medieurl = "https://rejsepanelet-2ad3.restdb.io/home/media/";
+        const medieurl = "https://rejsepanelet-2ad3.restdb.io/media/";
         let land;
 
         const options = {
@@ -60,7 +60,7 @@
         function visLand() {
             document.querySelector(".funFact").textContent = land.funFact;
             document.querySelector(".kendtFor").textContent = land.kendtFor;
-            document.querySelector(".distance").textContent = (`distance: ${land.antal_km}KM`);
+            document.querySelector(".distance").textContent = (`Antal kilometer fra København: ${land.distance}KM`);
             document.querySelector(".ferieType").textContent = land.ferieType;
             document.querySelector(".langBeskrivelse").textContent = land.langBeskrivelse;
             document.querySelector(".billede").src = medieurl + land.billede;
@@ -70,5 +70,8 @@
         function tilbage() {
             history.back();
         }
+
     </script>
-</body></html>
+</body>
+
+</html>

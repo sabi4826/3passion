@@ -1,5 +1,5 @@
 	const header = document.querySelector("header h1");
-	const medieurl = "https://rejsepanelet-2ad3.restdb.io/home/media/";
+	const medieurl = "https://rejsepanelet-2ad3.restdb.io/media/";
 	const myHeaders = {
 	    "x-apikey": "602e6aa25ad3610fb5bb6325"
 	}
