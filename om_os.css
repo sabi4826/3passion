@@ -1,5 +1,16 @@
+*{
+    background-color:aquamarine;
+}
+section img{
+    height: 35vw;
+    width: auto;
+}
+section div{
+    margin: 2vw;
+}
 #personer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    margin: 6vw;
 }
