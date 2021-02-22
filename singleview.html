@@ -18,30 +18,36 @@
                 <a href=""><img src="logo_hvid.svg" alt="" class="logo" width="100" height="100"></a>
 
                 <div class="menu_tekst">
-                    <a href="om_os.html">Om os</a>
+                    <a href="om_os.html">Om Rejsepanelet</a>
                     <a href="kontakt.html">Kontakt</a>
                 </div>
             </nav>
         </div>
     </header>
 
-    <article class="land">
-        <button>←</button>
-        <img src="" alt="" class="billede">
-        <p class="langBeskrivelse"></p>
+    <main>
+        <article class="land">
+            <button class="tilbage_knap">←</button>
 
-        <h2>Fun fact:</h2>
-        <p class="funFact"></p>
+            <section class="grid_section">
+                <img src="" alt="" class="billede">
 
-        <h2>Landet er kendt for...</h2>
-        <p class="kendtFor"></p>
+                <h2>Fun fact:</h2>
+                <p class="funFact"></p>
 
-        <h2>Antal kilometer fra København:</h2>
-        <p class="distance"></p>
+                <h2>Landet er kendt for...</h2>
+                <p class="kendtFor"></p>
 
-        <h2>Ferie type:</h2>
-        <p class="ferieType"></p>
-    </article>
+                <h2>Antal kilometer fra København:</h2>
+                <p class="distance"></p>
+
+                <h2>Ferie type:</h2>
+                <p class="ferieType"></p>
+            </section>
+
+            <p class="langBeskrivelse"></p>
+        </article>
+    </main>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
@@ -79,5 +85,8 @@
         function tilbage() {
             history.back();
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
