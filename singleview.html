@@ -1,89 +1,92 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Single view</title>
-    <link rel="stylesheet" href="singleview.css">
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Single view</title>
+	<link rel="stylesheet" href="singleview.css">
+	<link rel="stylesheet" href="style.css">
 
-    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.typekit.net/lnx0sep.css">
+	<link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.typekit.net/lnx0sep.css">
 </head>
 
 <body>
-    <header>
-        <div class="menu">
-            <nav>
-                <a href="index.html"><img src="logo_hvid.svg" alt="" class="logo" width="100" height="100"></a>
+	<header>
+		<div class="menu">
+			<nav>
+				<a href="index.html"><img src="logo_hvid.svg" alt="logo" class="logo" width="100" height="100"></a>
 
-                <div class="menu_tekst">
-                    <a href="om_os.html">Om Rejsepanelet</a>
-                    <a href="kontakt.html">Kontakt</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+				<div class="menu_tekst">
+					<a href="om_os.html">Om Rejsepanelet</a>
+					<a href="kontakt.html">Kontakt</a>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-    <main>
-        <article class="land">
-            <button class="tilbage_knap">←</button>
+	<main>
+		<article class="land">
+			<button class="tilbage_knap">←</button>
 
-            <section class="grid_section">
-                <img src="" alt="" class="billede">
+			<section class="grid_section">
+				<img src="" alt="" class="billede">
+				<div class="grid_tekst">
+					<h2>Fun fact:</h2>
+					<p class="funFact"></p>
 
-                <h2>Fun fact:</h2>
-                <p class="funFact"></p>
+					<h2>Landet er kendt for...</h2>
+					<p class="kendtFor"></p>
 
-                <h2>Landet er kendt for...</h2>
-                <p class="kendtFor"></p>
+					<h2>Antal kilometer fra København:</h2>
+					<p class="distance"></p>
 
-                <h2>Antal kilometer fra København:</h2>
-                <p class="distance"></p>
+					<h2>Ferie type:</h2>
+					<p class="ferieType"></p>
+				</div>
+			</section>
+			<img src="bali.jpg" alt="verdenskort" class="kort">
+			<p class="langBeskrivelse"></p>
+		</article>
+	</main>
 
-                <h2>Ferie type:</h2>
-                <p class="ferieType"></p>
-            </section>
 
-            <p class="langBeskrivelse"></p>
-        </article>
-    </main>
 
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const id = urlParams.get("id");
+	<script>
+		const urlParams = new URLSearchParams(window.location.search);
+		const id = urlParams.get("id");
 
-        const medieurl = "https://rejsepanelet-2ad3.restdb.io/media/";
-        let land;
+		const medieurl = "https://rejsepanelet-2ad3.restdb.io/media/";
+		let land;
 
-        const options = {
-            "x-apikey": "602e6aa25ad3610fb5bb6325"
-        }
-        console.log("ID", id);
-        document.addEventListener("DOMContentLoaded", hentData);
+		const options = {
+			"x-apikey": "602e6aa25ad3610fb5bb6325"
+		}
+		console.log("ID", id);
+		document.addEventListener("DOMContentLoaded", hentData);
 
-        async function hentData() {
-            const JSONData = await fetch(`https://rejsepanelet-2ad3.restdb.io/rest/destinationer/${id}`, {
-                headers: options
-            });
-            land = await JSONData.json();
+		async function hentData() {
+			const JSONData = await fetch(`https://rejsepanelet-2ad3.restdb.io/rest/destinationer/${id}`, {
+				headers: options
+			});
+			land = await JSONData.json();
 
-            console.log("land", land);
-            visLand(land);
-        }
+			console.log("land", land);
+			visLand(land);
+		}
 
-        function visLand() {
-            document.querySelector(".funFact").textContent = land.funFact;
-            document.querySelector(".kendtFor").textContent = land.kendtFor;
-            document.querySelector(".distance").textContent = (`${land.distance}KM`);
-            document.querySelector(".ferieType").textContent = land.ferieType;
-            document.querySelector(".langBeskrivelse").textContent = land.langBeskrivelse;
-            document.querySelector(".billede").src = medieurl + land.billede;
-            document.querySelector("button").addEventListener("click", tilbage)
-        }
+		function visLand() {
+			document.querySelector(".funFact").textContent = land.funFact;
+			document.querySelector(".kendtFor").textContent = land.kendtFor;
+			document.querySelector(".distance").textContent = (`${land.distance}KM`);
+			document.querySelector(".ferieType").textContent = land.ferieType;
+			document.querySelector(".langBeskrivelse").textContent = land.langBeskrivelse;
+			document.querySelector(".billede").src = medieurl + land.billede;
+			document.querySelector("button").addEventListener("click", tilbage)
+		}
 
-        function tilbage() {
-            history.back();
-        }
-    </script>
+		function tilbage() {
+			history.back();
+		}
+	</script>
 </body></html>
