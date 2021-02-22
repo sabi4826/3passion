@@ -21,3 +21,10 @@ h2,
 h3 {
     text-align: center;
 }
+
+button:hover {
+    background-color: #8DD3E3;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
