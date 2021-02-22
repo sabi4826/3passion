@@ -5,33 +5,41 @@
     <meta charset="UTF-8">
     <title>Single view</title>
     <link rel="stylesheet" href="singleview.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <div class="logo_container"><img src="logo.svg" alt="" class="logo" width="100" height="100"></div>
+        <div class="menu">
+            <nav>
+                <a href=""><img src="logo_hvid.svg" alt="" class="logo" width="100" height="100"></a>
 
-        <!--
-        <nav>
-            <a data-kategori="alle" class="valgt">Alle retter</a>
-            <a data-kategori="forretter">Forretter</a>
-            <a data-kategori="hovedretter">Hovedretter</a>
-            <a data-kategori="desserter">Desserter</a>
-            <a data-kategori="drikkevarer">Drikkevarer</a>
-        </nav>
--->
+                <div class="menu_tekst">
+                    <a href="om_os.html">Om os</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <article class="land">
         <button>←</button>
         <img src="" alt="" class="billede">
-        <h2 class="funFact"></h2>
-        <h2 class="kendtFor"></h2>
-        <h2 class="distance"></h2>
-        <h3 class="ferieType"></h3>
-        <h4 class="langBeskrivelse"></h4>
+        <p class="langBeskrivelse"></p>
+
+        <h2>Fun fact:</h2>
+        <p class="funFact"></p>
+
+        <h2>Landet er kendt for...</h2>
+        <p class="kendtFor"></p>
+
+        <h2>Antal kilometer fra København:</h2>
+        <p class="distance"></p>
+
+        <h2>Ferie type:</h2>
+        <p class="ferieType"></p>
     </article>
 
     <script>
@@ -60,7 +68,7 @@
         function visLand() {
             document.querySelector(".funFact").textContent = land.funFact;
             document.querySelector(".kendtFor").textContent = land.kendtFor;
-            document.querySelector(".distance").textContent = (`Antal kilometer fra København: ${land.distance}KM`);
+            document.querySelector(".distance").textContent = (`${land.distance}KM`);
             document.querySelector(".ferieType").textContent = land.ferieType;
             document.querySelector(".langBeskrivelse").textContent = land.langBeskrivelse;
             document.querySelector(".billede").src = medieurl + land.billede;
@@ -70,8 +78,5 @@
         function tilbage() {
             history.back();
         }
-
     </script>
-</body>
-
-</html>
+</body></html>

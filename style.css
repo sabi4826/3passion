@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: transparent;
+    display: flex;
+    position: sticky;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    z-index: 20;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav a {
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav a:link {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: none;
+}
