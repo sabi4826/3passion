@@ -80,6 +80,10 @@ h3 {
     font-style: normal;
 }
 
+h3 {
+    font-weight: 700;
+}
+
 p {
     font-family: 'Montserrat';
     line-height: 1.5rem;
