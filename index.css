@@ -28,7 +28,25 @@ button:hover {
     color: white;
     border: none;
 }*/
+.forside {
+    display: grid;
+}
 
+.forside_img,
+h1 {
+    grid-area: 1/1;
+}
+
+h1 {
+    place-self: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.forside_img {
+    width: 100%;
+    object-fit: cover;
+}
 
 .forside_img {
     height: 90vh;
