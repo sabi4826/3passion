@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-main {
+.main_kontakt {
     display: grid;
     place-content: center;
     margin: 6vw 6vw 0;
