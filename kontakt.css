@@ -57,7 +57,7 @@ input {
 }
 
 textarea {
-    border: 1px solid #232323;
+    border: 1px solid #2F675A;
     background: rgba(110, 174, 159, 0.32);
     padding: 8px 12px 10px;
     border-radius: 4px;
@@ -67,7 +67,7 @@ textarea {
 
 #send_message {
     color: white;
-/*    border: 1px solid rgba(47, 103, 90, 0.69);*/
+    border: 1px solid rgba(47, 103, 90, 0.69);
     background: rgba(47, 103, 90, 0.69);
     padding: 8px 12px 10px;
     border-radius: 4px;
