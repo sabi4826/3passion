@@ -4,7 +4,6 @@ function sidenVises() {
     console.log("sidenVises");
 }
 
-
 //burgermenu
 function myFunction(x) {
     x.classList.toggle("change");

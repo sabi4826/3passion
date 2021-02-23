@@ -96,3 +96,11 @@ button:hover {
         margin: 0 10px;
     }
 }
+
+
+.valgt {
+    background-color: #6EAE9F;
+    cursor: pointer;
+    color: white;
+    border: 1px solid transparent;
+}
