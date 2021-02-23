@@ -206,6 +206,10 @@ button {
         transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }
+
+    button {
+        font-family: 'Montserrat';
+    }
 }
 
 
@@ -280,6 +284,7 @@ button {
         border: 1px solid #2F675A;
         font-size: 1rem;
         margin: 0 10px;
+        font-family: 'Montserrat';
     }
 
     button:hover {

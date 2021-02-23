@@ -60,17 +60,24 @@ h3 {
     font-style: normal;
 }
 
+p {
+    font-family: 'Montserrat';
+}
+
 .info {
     margin: 0;
 }
 
-button,
 .filter_knapper {
+    text-align: center;
+}
+
+button {
     text-align: center;
     background-color: transparent;
     border-radius: 5px;
     padding: 10px;
-
+    border: 1px solid #2F675A;
     font-size: 1rem;
     margin: 0 10px;
 }
@@ -83,11 +90,9 @@ button:hover {
 }
 
 @media (min-width: 800px) {
-/*
     .filter_knapper {
         text-align: center;
         font-size: 1rem;
         margin: 0 10px;
     }
-*/
 }
