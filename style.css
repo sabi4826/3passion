@@ -1,3 +1,4 @@
+/*
 body {
     margin: 0;
 }
@@ -45,8 +46,6 @@ nav a:hover {
     text-decoration: none;
 }
 
-
-/*tekter*/
 h1,
 h2,
 h3 {
@@ -61,4 +60,167 @@ button {
     padding: 10px;
     border: 1px solid grey;
     font-size: 1rem;
+}
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 800px) {
+
+    /*mobil*/
+    body {
+        margin: 0;
+    }
+
+    /*menu*/
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
+
+    .topnav a:hover {
+        background-color: white;
+    }
+
+    .topnav #myLinks {
+        display: none;
+        background-color: #f1f1f1;
+        text-align: center;
+        font-family: dico-typewriter-slab, mono;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .topnav a {
+        color: black;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        padding: 5vw;
+    }
+
+    a.logo {
+        padding: 0;
+    }
+
+    /*burgermenu*/
+    .container {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 3px;
+        top: 0;
+        margin: 6vw 3vw;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        transition: 0.4s;
+        border-radius: 10px;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+
+
+
+
+
+@media (min-width: 800px) {
+    .container {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .topnav {
+        display: flex;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    #myLinks {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #myLinks a {
+        padding: 10px;
+        cursor: pointer;
+        font-family: dico-typewriter-slab, mono;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #myLinks a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    #myLinks a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    #myLinks a:hover {
+        color: #6EAE9F;
+        text-decoration: none;
+    }
+
+    /*tekter*/
+    h1,
+    h2,
+    h3 {
+        font-family: dico-typewriter-slab, mono;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    button {
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #2F675A;
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    button:hover {
+        background-color: #6EAE9F;
+        cursor: pointer;
+        color: white;
+        border: 1px solid transparent;
+    }
 }
