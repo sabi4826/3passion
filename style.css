@@ -67,6 +67,67 @@ button {
     box-sizing: border-box;
 }
 
+/*//footer* WEB*/
+
+#footer {
+    position: absolute;
+    background-color: #327361;
+    width: 100%;
+    margin-top: 69px;
+
+}
+
+.footerbar .indhold {
+    display: flex;
+    margin-left: 6vw;
+    margin-top: 2vw;
+}
+
+.indhold h3 {
+    font-size: 1.6vw;
+    font-family: 'Montserrat';
+    margin: 2vw;
+    color: white;
+    padding-right: 0;
+}
+
+.kontakt {
+    margin-right: 4vw;
+}
+
+
+.indhold p {
+    font-family: 'Montserrat';
+    margin: 1.5vw;
+    font-size: 1.1vw;
+    color: white;
+    padding-right: 0;
+}
+
+.follow {
+    position: sticky;
+    display: flex;
+    padding-top: 34px;
+    margin-left: 73vw;
+}
+
+.copyright {
+    color: white;
+    font-size: 1.2vw;
+    padding-right: 4vw;
+}
+
+
+.ig {
+    height: 3vw;
+    padding-right: 1vw;
+}
+
+
+.fb {
+    height: 3vw;
+}
+
 
 @media (max-width: 800px) {
 
@@ -222,5 +283,52 @@ button {
         cursor: pointer;
         color: white;
         border: 1px solid transparent;
+    }
+}
+
+/*footer mobil */
+@media (max-width: 600px) {
+    .footerbar .indhold {
+        display: block;
+    }
+
+    .kontakt {
+        margin-right: 10vw;
+        margin-top: 3vw;
+        text-align: center;
+    }
+
+    .adresse {
+        margin-right: 10vw;
+        margin-top: 3vw;
+        text-align: center;
+    }
+
+    .follow {
+        position: sticky;
+        padding-top: 20px;
+        margin-left: 0vw;
+        text-align: center;
+        display: block;
+    }
+
+    .copyright {
+        padding-right: 3vw;
+    }
+
+    .ig {
+        padding-right: 1vw;
+    }
+
+    .fb {
+        padding-right: 3vw;
+    }
+
+    .indhold h3 {
+        font-size: 3vw;
+    }
+
+    .indhold p {
+        font-size: 1.8vw;
     }
 }
