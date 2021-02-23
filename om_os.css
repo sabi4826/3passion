@@ -1,13 +1,16 @@
-*{
-/*    background-color:aquamarine;*/
+* {
+    /*    background-color:aquamarine;*/
 }
-section img{
+
+section img {
     height: auto;
     width: 100%;
 }
-section div{
+
+section div {
     margin: 2vw;
 }
+
 #personer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -16,8 +19,22 @@ section div{
     margin: 6vw;
 }
 
-h1{
+h1 {
     margin-top: 10vw;
     text-align: center;
     font-size: 6vw;
+
+    font-family: dico-typewriter-slab, mono;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: dico-typewriter-slab, mono;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Montserrat';
 }
