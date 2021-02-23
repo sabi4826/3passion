@@ -67,6 +67,10 @@ button {
     box-sizing: border-box;
 }
 
+main {
+    margin: 6vw;
+}
+
 /*//footer* WEB*/
 
 #footer {
