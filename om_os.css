@@ -2,8 +2,8 @@
 /*    background-color:aquamarine;*/
 }
 section img{
-    height: 30vw;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 section div{
     margin: 2vw;
