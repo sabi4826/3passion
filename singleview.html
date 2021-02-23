@@ -53,7 +53,8 @@
                     <p class="ferieType"></p>
                 </div>
             </section>
-            <img src="bali.jpg" alt="verdenskort" class="kort">
+
+            <img src="" alt="verdenskort" class="map_location">
             <p class="langBeskrivelse"></p>
         </article>
     </main>
@@ -111,6 +112,7 @@
             document.querySelector(".ferieType").textContent = land.ferieType;
             document.querySelector(".langBeskrivelse").textContent = land.langBeskrivelse;
             document.querySelector(".billede").src = medieurl + land.billede;
+            document.querySelector(".map_location").src = medieurl + land.map_location;
             document.querySelector("button").addEventListener("click", tilbage)
         }
 

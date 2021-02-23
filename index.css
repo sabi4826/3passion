@@ -38,7 +38,7 @@ h1 {
 }
 
 h1 {
-/*    place-self: center;*/
+    /*    place-self: center;*/
     color: white;
     font-size: 2rem;
     margin-top: 24vw;
@@ -47,6 +47,7 @@ h1 {
 .forside_img {
     width: 100%;
     object-fit: cover;
+    object-position: 0 53%;
 }
 
 .forside_img {
