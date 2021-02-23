@@ -38,9 +38,10 @@ h1 {
 }
 
 h1 {
-    place-self: center;
+/*    place-self: center;*/
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: 24vw;
 }
 
 .forside_img {
