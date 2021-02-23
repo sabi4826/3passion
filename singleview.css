@@ -83,10 +83,8 @@ main {
     }
 
     .langBeskrivelse {
-        /*
-        margin-right: 280px;
-        margin-left: 0px;
-*/
+        margin-bottom: 10vw;
+        margin-top: 10vw;
     }
 
     article {
@@ -124,10 +122,11 @@ main {
     }
 
     .langBeskrivelse {
-        /*
-		margin-right: 500px;
-		margin-left: 20px;
-*/
+        margin-right: 15vw;
+        margin-left: 15vw;
+        line-height: 2;
+        margin-top: 8vw;
+
     }
 }
 
