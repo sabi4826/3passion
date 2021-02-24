@@ -48,12 +48,7 @@ h1 {
     width: 100%;
     object-fit: cover;
     object-position: 0 53%;
-}
-
-.forside_img {
     height: 90vh;
-    width: 100%;
-    object-fit: cover;
 }
 
 #liste {
