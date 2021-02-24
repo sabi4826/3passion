@@ -1,33 +1,7 @@
-/*
-.filter_knapper {
-    position: relative;
-    justify-content: space-evenly;
+* {
+    box-sizing: border-box;
 }
 
-#liste {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-
-    gap: 60px;
-    margin: 20px;
-}
-
-.class {
-    object-fit: cover;
-}
-
-h1,
-h2,
-h3 {
-    text-align: center;
-}
-
-button:hover {
-    background-color: #8DD3E3;
-    cursor: pointer;
-    color: white;
-    border: none;
-}*/
 .forside {
     display: grid;
 }
@@ -38,10 +12,11 @@ h1 {
 }
 
 h1 {
-    /*    place-self: center;*/
     color: white;
     font-size: 2rem;
     margin-top: 24vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .forside_img {
@@ -54,7 +29,6 @@ h1 {
 #liste {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    /*    grid-template-columns: 1fr 1fr;*/
 
     gap: 60px;
     margin: 20px;
@@ -63,12 +37,6 @@ h1 {
 .foto {
     max-width: 100%;
 }
-
-/*
-.class {
-    object-fit: cover;
-}
-*/
 
 h1,
 h2,

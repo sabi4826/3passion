@@ -6,12 +6,6 @@ img {
     max-width: 100%;
 }
 
-/*
-nav {
-    background-color: #8DD3E3;
-}
-*/
-
 .tilbage_knap {
     background-color: transparent;
     border: 1px solid transparent;
@@ -29,7 +23,6 @@ nav {
 }
 
 .grid_section img {
-    /*max-width: 300px;*/
     width: 100%;
     object-fit: cover;
     align-self: center;
@@ -53,14 +46,6 @@ main {
 }
 
 @media only screen and (min-width: 750px) {
-    main {
-        /*
-		margin: 0px;
-		margin-right: 20px;
-		margin-left: 20px;
-*/
-    }
-
     .grid_section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -98,10 +83,6 @@ main {
 }
 
 @media only screen and (min-width: 1000px) {
-    main {
-        /*		max-width: 1300px;*/
-    }
-
     .grid_section {
         grid-gap: 20px;
     }
@@ -118,7 +99,6 @@ main {
     .kort {
         max-width: 100%;
         margin-top: 6vw;
-        /*		margin-left: 20px;*/
     }
 
     .langBeskrivelse {
@@ -128,21 +108,4 @@ main {
         margin-top: 8vw;
 
     }
-}
-
-
-/*SKAL DET MED I GRID?*/
-/*
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-*/
-/*
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 20px;
-
-
-	grid-template-columns: 2fr 2fr;
-	grid-auto-flow: dense;*/
 }

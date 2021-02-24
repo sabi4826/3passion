@@ -11,12 +11,6 @@ function clickButton() {
     this.classList.add("valgt");
 }
 
-
-
-
-
-
-
 const header = document.querySelector("header h1");
 const medieurl = "https://rejsepanelet-2ad3.restdb.io/media/";
 const myHeaders = {
