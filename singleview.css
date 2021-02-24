@@ -1,111 +1,99 @@
-* {
-    box-sizing: border-box;
-}
-
 img {
-    max-width: 100%;
-}
-
-.tilbage_knap {
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 43px;
-    width: 48px;
-    margin: 20px 0;
-}
-
-.tilbage_knap:hover {
-    background-color: #6EAE9F;
-    color: white;
-}
-
-.grid_section img {
-    width: 100%;
-    object-fit: cover;
-    align-self: center;
-    justify-self: center;
-}
-
-h2 {
-    margin-bottom: 0;
-    font-family: dico-typewriter-slab, mono;
-    font-weight: 400;
-    font-style: normal;
-}
-
-p {
-    font-family: 'Montserrat';
-    line-height: 1.5rem;
+	max-width: 100%;
 }
 
 main {
-    margin: 50px;
+	margin: 50px;
 }
 
-@media only screen and (min-width: 750px) {
-    .grid_section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 1fr;
-        grid-gap: 25px;
-    }
+/*Tilbage-knap */
+.tilbage_knap {
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 43px;
+	width: 48px;
+	margin: 20px 0;
+}
 
-    section img {
-        grid-column: 1/2;
-    }
+.tilbage_knap:hover {
+	background-color: #6EAE9F;
+	color: white;
+}
 
-    .grid_tekst {
-        grid-column: 2/4;
-        margin-right: 10vw;
-    }
+.grid_section img {
+	width: 100%;
+	object-fit: cover;
+	align-self: center;
+	justify-self: center;
+}
 
-    .kort {
-        max-width: 75vw;
-        margin-top: 10vw;
-    }
+h2 {
+	margin-bottom: 0;
+	font-family: dico-typewriter-slab, mono;
+	font-weight: 400;
+	font-style: normal;
+}
 
-    .langBeskrivelse {
-        margin-bottom: 10vw;
-        margin-top: 10vw;
-    }
+p {
+	font-family: 'Montserrat';
+	line-height: 1.5rem;
+}
 
-    article {
-        margin-top: 100px;
-    }
+@media only screen and (min-width: 850px) {
 
-    .tilbage_knap {
-        line-height: 28px;
-    }
+	main {
+		margin: 10px;
+	}
 
+	.grid_section {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-auto-rows: 1fr;
+		grid-gap: 25px;
+	}
+
+	section img {
+		grid-column: 1/3;
+	}
+
+	.grid_tekst {
+		grid-column: 3/4;
+		margin-right: 0px;
+	}
+
+	.langBeskrivelse {
+		margin-bottom: 10vw;
+		margin-top: 5vw;
+	}
+
+	article {
+		margin-top: 100px;
+	}
+
+	.tilbage_knap {
+		line-height: 28px;
+	}
 }
 
 @media only screen and (min-width: 1000px) {
-    .grid_section {
-        grid-gap: 20px;
-    }
+	.grid_section {
+		grid-gap: 20px;
+	}
 
-    section img {
-        grid-column: 1/3;
-    }
+	.map_location {
+		max-width: 65vw;
+		margin-left: 12vw;
+		margin-top: 4vw;
+	}
 
-    .grid_tekst {
-        margin-right: 0px;
-        grid-column: 3/4;
-    }
-
-    .kort {
-        max-width: 100%;
-        margin-top: 6vw;
-    }
-
-    .langBeskrivelse {
-        margin-right: 15vw;
-        margin-left: 15vw;
-        line-height: 2;
-        margin-top: 8vw;
-
-    }
+	.langBeskrivelse {
+		margin-right: 15vw;
+		margin-left: 15vw;
+		margin-bottom: 0vw;
+		line-height: 2;
+		margin-top: 6vw;
+	}
 }
