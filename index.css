@@ -58,11 +58,15 @@ h1 {
 
 #liste {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     /*    grid-template-columns: 1fr 1fr;*/
 
     gap: 60px;
     margin: 20px;
+}
+
+.foto {
+    max-width: 100%;
 }
 
 /*
