@@ -2,17 +2,12 @@
     box-sizing: border-box;
 }
 
-main {
-    margin: 0 6vw;
-}
-
 /*//footer* WEB*/
 #footer {
     position: absolute;
     background-color: #FFEDA3;
     width: 100%;
     margin-top: 69px;
-
 }
 
 .footerbar .indhold {
@@ -150,6 +145,10 @@ main {
 }
 
 @media (min-width: 800px) {
+    main {
+        margin: 0 6vw;
+    }
+
     .container {
         display: none;
     }

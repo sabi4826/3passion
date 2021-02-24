@@ -26,14 +26,6 @@ h1 {
     height: 90vh;
 }
 
-#liste {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-
-    gap: 60px;
-    margin: 20px;
-}
-
 .foto {
     max-width: 100%;
 }
@@ -51,13 +43,13 @@ h3 {
     font-weight: 700;
 }
 
+article {
+    margin: 2vw;
+}
+
 p {
     font-family: 'Montserrat';
     line-height: 1.5rem;
-}
-
-.info {
-    margin: 0;
 }
 
 .filter_knapper {
@@ -65,7 +57,6 @@ p {
 }
 
 button {
-    margin: 0 0 15px;
     text-align: center;
     background-color: transparent;
     border-radius: 5px;
@@ -89,10 +80,22 @@ button:hover {
 }
 
 @media (min-width: 800px) {
+    #liste {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+        gap: 60px;
+        margin: 20px;
+    }
+
     button {
         margin: 0 10px;
         text-align: center;
         font-size: 1rem;
         margin: 0 10px;
+    }
+
+    .info {
+        margin: 15px 0;
     }
 }
