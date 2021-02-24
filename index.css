@@ -97,13 +97,13 @@ p {
 }
 
 button {
+    margin: 0 0 15px;
     text-align: center;
     background-color: transparent;
     border-radius: 5px;
     padding: 10px;
     border: 1px solid #2F675A;
     font-size: 1rem;
-    margin: 0 10px;
 }
 
 button:hover {
@@ -113,18 +113,18 @@ button:hover {
     border: 1px solid transparent;
 }
 
-@media (min-width: 800px) {
-    .filter_knapper {
-        text-align: center;
-        font-size: 1rem;
-        margin: 0 10px;
-    }
-}
-
-
 .valgt {
     background-color: #6EAE9F;
     cursor: pointer;
     color: white;
     border: 1px solid transparent;
+}
+
+@media (min-width: 800px) {
+    button {
+        margin: 0 10px;
+        text-align: center;
+        font-size: 1rem;
+        margin: 0 10px;
+    }
 }
