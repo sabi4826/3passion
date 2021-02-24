@@ -96,6 +96,7 @@
         console.log("ID", id);
         document.addEventListener("DOMContentLoaded", hentData);
 
+        //funktion, der henter data fra restdb.io
         async function hentData() {
             const JSONData = await fetch(`https://rejsepanelet-2ad3.restdb.io/rest/destinationer/${id}`, {
                 headers: options
@@ -106,17 +107,24 @@
             visLand(land);
         }
 
+        //funktion, der viser de enkelte data vi ønsker skal vises om hvert enkelt land
         function visLand() {
+            //henvis til hvor i DOM'en, der ønskes at vist noget fra og brug textContent til at vælge, hvad der skal skrives ud på siden
             document.querySelector(".funFact").textContent = land.funFact;
             document.querySelector(".kendtFor").textContent = land.kendtFor;
             document.querySelector(".distance").textContent = (`${land.distance}KM`);
             document.querySelector(".ferieType").textContent = land.ferieType;
             document.querySelector(".langBeskrivelse").textContent = land.langBeskrivelse;
+
+            //henvis til hvor i DOM'en, der ønskes vist noget fra, og vælg src og hvilken const (her medieurl), der skal trækkes data fra
             document.querySelector(".billede").src = medieurl + land.billede;
             document.querySelector(".map_location").src = medieurl + land.map_location;
+
+            //ved klik på knap føres man til funktionen tilbage (dermed tilbage til loop view)//
             document.querySelector("button").addEventListener("click", tilbage)
         }
 
+        //function, der fører en tilbage til loop view
         function tilbage() {
             history.back();
         }
