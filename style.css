@@ -2,6 +2,136 @@
     box-sizing: border-box;
 }
 
+/*mobil*/
+body {
+    margin: 0;
+}
+
+/*menu*/
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+
+.topnav a:hover {
+    background-color: #FFEDA3;
+}
+
+a.logo:hover {
+    background-color: white;
+}
+
+.topnav #myLinks {
+    display: none;
+    background-color: white;
+    text-align: center;
+    font-family: dico-typewriter-slab, mono;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.topnav a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    padding: 5vw;
+}
+
+a.logo {
+    padding: 0;
+}
+
+/*burgermenu*/
+.container {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 3px;
+    top: 0;
+    margin: 6vw 3vw;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+button {
+    font-family: 'Montserrat';
+}
+
+/*    footer */
+
+.footerbar .indhold {
+    display: block;
+    /*        //NYT*/
+    margin-left: 10vw;
+}
+
+.kontakt {
+    margin-right: 10vw;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+.adresse {
+    margin-right: 10vw;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+.follow {
+    position: sticky;
+    padding-top: 6px;
+    margin-left: 0vw;
+    text-align: center;
+    display: block;
+}
+
+.copyright {
+    padding-right: 3vw;
+    margin-bottom: 0vw;
+}
+
+.ig {
+    padding-right: 1vw;
+}
+
+.fb {
+    padding-right: 3vw;
+}
+
+.indhold h3 {
+    font-size: 3vw;
+}
+
+.indhold p {
+    font-size: 1.8vw;
+}
+
+
 /*//footer* WEB*/
 #footer {
     position: absolute;
@@ -62,139 +192,14 @@
 }
 
 
-@media (max-width: 800px) {
-
-    /*mobil*/
-    body {
-        margin: 0;
-    }
-
-    /*menu*/
-    .topnav {
-        overflow: hidden;
-        background-color: white;
-        position: relative;
-    }
-
-    .topnav a:hover {
-        background-color: #FFEDA3;
-    }
-
-    a.logo:hover {
-        background-color: white;
+@media (min-width: 800px) {
+    .container {
+        display: none;
     }
 
     .topnav #myLinks {
-        display: none;
-        background-color: white;
-        text-align: center;
-        font-family: dico-typewriter-slab, mono;
-        font-weight: 400;
-        font-style: normal;
+        display: flex;
     }
-
-    .topnav a {
-        color: black;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-        padding: 5vw;
-    }
-
-    a.logo {
-        padding: 0;
-    }
-
-    /*burgermenu*/
-    .container {
-        cursor: pointer;
-        display: block;
-        position: absolute;
-        right: 3px;
-        top: 0;
-        margin: 6vw 3vw;
-    }
-
-    .bar1,
-    .bar2,
-    .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: black;
-        margin: 6px 0;
-        transition: 0.4s;
-        border-radius: 10px;
-    }
-
-    .change .bar1 {
-        transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-
-    .change .bar2 {
-        opacity: 0;
-    }
-
-    .change .bar3 {
-        transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
-    }
-
-    button {
-        font-family: 'Montserrat';
-    }
-
-    /*    footer */
-
-    .footerbar .indhold {
-        display: block;
-        /*        //NYT*/
-        margin-left: 10vw;
-    }
-
-    .kontakt {
-        margin-right: 10vw;
-        margin-top: 3vw;
-        text-align: center;
-    }
-
-    .adresse {
-        margin-right: 10vw;
-        margin-top: 3vw;
-        text-align: center;
-    }
-
-    .follow {
-        position: sticky;
-        padding-top: 6px;
-        margin-left: 0vw;
-        text-align: center;
-        display: block;
-    }
-
-    .copyright {
-        padding-right: 3vw;
-        margin-bottom: 0vw;
-    }
-
-    .ig {
-        padding-right: 1vw;
-    }
-
-    .fb {
-        padding-right: 3vw;
-    }
-
-    .indhold h3 {
-        font-size: 3vw;
-    }
-
-    .indhold p {
-        font-size: 1.8vw;
-    }
-}
-
-@media (min-width: 800px) {
 
     main {
         margin: 0 6vw;
