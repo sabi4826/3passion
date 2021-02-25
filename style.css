@@ -61,6 +61,7 @@
     height: 2vw;
 }
 
+
 @media (max-width: 800px) {
 
     /*mobil*/
@@ -141,6 +142,55 @@
 
     button {
         font-family: 'Montserrat';
+    }
+
+    /*    footer */
+
+    .footerbar .indhold {
+        display: block;
+        /*        //NYT*/
+        margin-left: 10vw;
+    }
+
+    .kontakt {
+        margin-right: 10vw;
+        margin-top: 3vw;
+        text-align: center;
+    }
+
+    .adresse {
+        margin-right: 10vw;
+        margin-top: 3vw;
+        text-align: center;
+    }
+
+    .follow {
+        position: sticky;
+        padding-top: 6px;
+        margin-left: 0vw;
+        text-align: center;
+        display: block;
+    }
+
+    .copyright {
+        padding-right: 3vw;
+        margin-bottom: 0vw;
+    }
+
+    .ig {
+        padding-right: 1vw;
+    }
+
+    .fb {
+        padding-right: 3vw;
+    }
+
+    .indhold h3 {
+        font-size: 3vw;
+    }
+
+    .indhold p {
+        font-size: 1.8vw;
     }
 }
 
@@ -229,51 +279,6 @@
     .indhold h3 {
         text-align: initial;
     }
-}
 
-/*footer mobil */
-@media (max-width: 600px) {
-    .footerbar .indhold {
-        display: block;
-    }
 
-    .kontakt {
-        margin-right: 10vw;
-        margin-top: 3vw;
-        text-align: center;
-    }
-
-    .adresse {
-        margin-right: 10vw;
-        margin-top: 3vw;
-        text-align: center;
-    }
-
-    .follow {
-        position: sticky;
-        padding-top: 20px;
-        margin-left: 0vw;
-        text-align: center;
-        display: block;
-    }
-
-    .copyright {
-        padding-right: 3vw;
-    }
-
-    .ig {
-        padding-right: 1vw;
-    }
-
-    .fb {
-        padding-right: 3vw;
-    }
-
-    .indhold h3 {
-        font-size: 3vw;
-    }
-
-    .indhold p {
-        font-size: 1.8vw;
-    }
 }
