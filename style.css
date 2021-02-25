@@ -90,6 +90,13 @@ button {
     margin-left: 10vw;
 }
 
+#footer {
+    position: absolute;
+    background-color: #FFEDA3;
+    width: 100%;
+    margin-top: 69px;
+}
+
 .kontakt {
     margin-right: 10vw;
     margin-top: 3vw;
@@ -113,14 +120,17 @@ button {
 .copyright {
     padding-right: 3vw;
     margin-bottom: 0vw;
+    font-size: 1.8vw;
 }
 
 .ig {
     padding-right: 1vw;
+    height: 4vw;
 }
 
 .fb {
     padding-right: 3vw;
+    height: 4vw;
 }
 
 .indhold h3 {
@@ -128,69 +138,8 @@ button {
 }
 
 .indhold p {
-    font-size: 1.8vw;
+    font-size: 2.1vw;
 }
-
-
-/*//footer* WEB*/
-#footer {
-    position: absolute;
-    background-color: #FFEDA3;
-    width: 100%;
-    margin-top: 69px;
-}
-
-.footerbar .indhold {
-    display: flex;
-    margin-left: 6vw;
-    margin-top: 2vw;
-    color: black;
-}
-
-.indhold h3 {
-    font-size: 1.6vw;
-    font-family: 'Montserrat';
-    margin: 2vw;
-    padding-right: 0;
-    margin-left: 0;
-}
-
-.kontakt {
-    margin-right: 4vw;
-}
-
-
-.indhold p {
-    font-family: 'Montserrat';
-    margin: 1.5vw;
-    font-size: 1.1vw;
-    padding-right: 0;
-    margin-left: 0;
-}
-
-.follow {
-    position: sticky;
-    display: flex;
-    padding-top: 34px;
-    margin-left: 73vw;
-    align-items: center;
-}
-
-.copyright {
-    font-size: 1.2vw;
-    padding-right: 4vw;
-    font-family: 'Montserrat';
-}
-
-.ig {
-    height: 2vw;
-    padding-right: 1vw;
-}
-
-.fb {
-    height: 2vw;
-}
-
 
 @media (min-width: 800px) {
     .container {
@@ -254,6 +203,7 @@ button {
     #myLinks a:hover {
         color: #6EAE9F;
         text-decoration: none;
+        background-color: white;
     }
 
     /*tekter*/
@@ -284,5 +234,65 @@ button {
 
     .indhold h3 {
         text-align: initial;
+    }
+
+
+
+
+    /*//footer* WEB*/
+
+    .footerbar .indhold {
+        display: flex;
+        margin-left: 6vw;
+        margin-top: 2vw;
+        color: black;
+    }
+
+    .indhold h3 {
+        font-size: 1.6vw;
+        font-family: 'Montserrat';
+        margin: 2vw;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .kontakt {
+        margin-right: 4vw;
+        text-align: left;
+    }
+
+    .adresse {
+        text-align: left;
+    }
+
+    .indhold p {
+        font-family: 'Montserrat';
+        margin: 1.5vw;
+        font-size: 1.1vw;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .follow {
+        position: sticky;
+        display: flex;
+        padding-top: 34px;
+        margin-left: 73vw;
+        align-items: center;
+    }
+
+    .copyright {
+        font-size: 1.2vw;
+        padding-right: 4vw;
+        font-family: 'Montserrat';
+    }
+
+    .ig {
+        height: 2vw;
+        padding-right: 1vw;
+    }
+
+    .fb {
+        height: 2vw;
     }
 }
