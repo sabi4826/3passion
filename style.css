@@ -1,280 +1,283 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*//footer* WEB*/
 #footer {
-	position: absolute;
-	background-color: #FFEDA3;
-	width: 100%;
-	margin-top: 69px;
+    position: absolute;
+    background-color: #FFEDA3;
+    width: 100%;
+    margin-top: 69px;
 }
 
 .footerbar .indhold {
-	display: flex;
-	margin-left: 6vw;
-	margin-top: 2vw;
-	color: black;
+    display: flex;
+    margin-left: 6vw;
+    margin-top: 2vw;
+    color: black;
 }
 
 .indhold h3 {
-	font-size: 1.6vw;
-	font-family: 'Montserrat';
-	margin: 2vw;
-	padding-right: 0;
-	margin-left: 0;
+    font-size: 1.6vw;
+    font-family: 'Montserrat';
+    margin: 2vw;
+    padding-right: 0;
+    margin-left: 0;
 }
 
 .kontakt {
-	margin-right: 4vw;
+    margin-right: 4vw;
 }
 
 
 .indhold p {
-	font-family: 'Montserrat';
-	margin: 1.5vw;
-	font-size: 1.1vw;
-	padding-right: 0;
-	margin-left: 0;
+    font-family: 'Montserrat';
+    margin: 1.5vw;
+    font-size: 1.1vw;
+    padding-right: 0;
+    margin-left: 0;
 }
 
 .follow {
-	position: sticky;
-	display: flex;
-	padding-top: 34px;
-	margin-left: 73vw;
-	align-items: center;
+    position: sticky;
+    display: flex;
+    padding-top: 34px;
+    margin-left: 73vw;
+    align-items: center;
 }
 
 .copyright {
-	font-size: 1.2vw;
-	padding-right: 4vw;
-	font-family: 'Montserrat';
+    font-size: 1.2vw;
+    padding-right: 4vw;
+    font-family: 'Montserrat';
 }
 
 .ig {
-	height: 2vw;
-	padding-right: 1vw;
+    height: 2vw;
+    padding-right: 1vw;
 }
 
 .fb {
-	height: 2vw;
+    height: 2vw;
 }
 
 
 @media (max-width: 800px) {
 
-	/*mobil*/
-	body {
-		margin: 0;
-	}
+    /*mobil*/
+    body {
+        margin: 0;
+    }
 
-	/*menu*/
-	.topnav {
-		overflow: hidden;
-		background-color: white;
-		position: relative;
-	}
+    /*menu*/
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+    }
 
-	.topnav a:hover {
-		background-color: #FFEDA3;
-	}
+    .topnav a:hover {
+        background-color: #FFEDA3;
+    }
 
-	a.logo:hover {
-		background-color: white;
-	}
+    a.logo:hover {
+        background-color: white;
+    }
 
-	.topnav #myLinks {
-		display: none;
-		background-color: white;
-		text-align: center;
-		font-family: dico-typewriter-slab, mono;
-		font-weight: 400;
-		font-style: normal;
-	}
+    .topnav #myLinks {
+        display: none;
+        background-color: white;
+        text-align: center;
+        font-family: dico-typewriter-slab, mono;
+        font-weight: 400;
+        font-style: normal;
+    }
 
-	.topnav a {
-		color: black;
-		text-decoration: none;
-		font-size: 17px;
-		display: block;
-		padding: 5vw;
-	}
+    .topnav a {
+        color: black;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        padding: 5vw;
+    }
 
-	a.logo {
-		padding: 0;
-	}
+    a.logo {
+        padding: 0;
+    }
 
-	/*burgermenu*/
-	.container {
-		cursor: pointer;
-		display: block;
-		position: absolute;
-		right: 3px;
-		top: 0;
-		margin: 6vw 3vw;
-	}
+    /*burgermenu*/
+    .container {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 3px;
+        top: 0;
+        margin: 6vw 3vw;
+    }
 
-	.bar1,
-	.bar2,
-	.bar3 {
-		width: 35px;
-		height: 5px;
-		background-color: black;
-		margin: 6px 0;
-		transition: 0.4s;
-		border-radius: 10px;
-	}
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        transition: 0.4s;
+        border-radius: 10px;
+    }
 
-	.change .bar1 {
-		transform: rotate(-45deg) translate(-9px, 6px);
-		transform: rotate(-45deg) translate(-9px, 6px);
-	}
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
 
-	.change .bar2 {
-		opacity: 0;
-	}
+    .change .bar2 {
+        opacity: 0;
+    }
 
-	.change .bar3 {
-		transform: rotate(45deg) translate(-8px, -8px);
-		transform: rotate(45deg) translate(-8px, -8px);
-	}
+    .change .bar3 {
+        transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
 
-	button {
-		font-family: 'Montserrat';
-	}
+    button {
+        font-family: 'Montserrat';
+    }
 
-	/*    footer */
+    /*    footer */
 
-	.footerbar .indhold {
-		display: block;
-		/*        //NYT*/
-		margin-left: 10vw;
-	}
+    .footerbar .indhold {
+        display: block;
+        /*        //NYT*/
+        margin-left: 10vw;
+    }
 
-	.kontakt {
-		margin-right: 10vw;
-		margin-top: 3vw;
-		text-align: center;
-	}
+    .kontakt {
+        margin-right: 10vw;
+        margin-top: 3vw;
+        text-align: center;
+    }
 
-	.adresse {
-		margin-right: 10vw;
-		margin-top: 3vw;
-		text-align: center;
-	}
+    .adresse {
+        margin-right: 10vw;
+        margin-top: 3vw;
+        text-align: center;
+    }
 
-	.follow {
-		position: sticky;
-		padding-top: 6px;
-		margin-left: 0vw;
-		text-align: center;
-		display: block;
-	}
+    .follow {
+        position: sticky;
+        padding-top: 6px;
+        margin-left: 0vw;
+        text-align: center;
+        display: block;
+    }
 
-	.copyright {
-		padding-right: 3vw;
-		margin-bottom: 0vw;
-	}
+    .copyright {
+        padding-right: 3vw;
+        margin-bottom: 0vw;
+    }
 
-	.ig {
-		padding-right: 1vw;
-	}
+    .ig {
+        padding-right: 1vw;
+    }
 
-	.fb {
-		padding-right: 3vw;
-	}
+    .fb {
+        padding-right: 3vw;
+    }
 
-	.indhold h3 {
-		font-size: 3vw;
-	}
+    .indhold h3 {
+        font-size: 3vw;
+    }
 
-	.indhold p {
-		font-size: 1.8vw;
-	}
+    .indhold p {
+        font-size: 1.8vw;
+    }
 }
 
-main {
-	margin: 0 6vw;
-}
+@media (min-width: 800px) {
 
-.container {
-	display: none;
-}
+    main {
+        margin: 0 6vw;
+    }
 
-body {
-	margin: 0;
-}
+    .container {
+        display: none;
+    }
 
-img {
-	max-width: 100%;
-}
+    body {
+        margin: 0;
+    }
 
-.topnav {
-	display: flex;
-	background-color: white;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	align-items: center;
-}
+    img {
+        max-width: 100%;
+    }
 
-#myLinks {
-	display: flex;
-	width: 100%;
-	justify-content: flex-end;
-	align-items: center;
-}
+    .topnav {
+        display: flex;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        align-items: center;
+    }
 
-#myLinks a {
-	padding: 20px;
-	cursor: pointer;
-	font-family: dico-typewriter-slab, mono;
-	font-weight: 400;
-	font-style: normal;
-}
+    #myLinks {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
-#myLinks a:link {
-	color: black;
-	text-decoration: none;
-}
+    #myLinks a {
+        padding: 20px;
+        cursor: pointer;
+        font-family: dico-typewriter-slab, mono;
+        font-weight: 400;
+        font-style: normal;
+    }
 
-#myLinks a:visited {
-	color: black;
-	text-decoration: none;
-}
+    #myLinks a:link {
+        color: black;
+        text-decoration: none;
+    }
 
-#myLinks a:hover {
-	color: #6EAE9F;
-	text-decoration: none;
-}
+    #myLinks a:visited {
+        color: black;
+        text-decoration: none;
+    }
 
-/*tekter*/
-h1,
-h2,
-h3 {
-	font-family: dico-typewriter-slab, mono;
-	font-weight: 400;
-	font-style: normal;
-}
+    #myLinks a:hover {
+        color: #6EAE9F;
+        text-decoration: none;
+    }
 
-button {
-	background-color: transparent;
-	border-radius: 5px;
-	padding: 10px;
-	border: 1px solid #2F675A;
-	font-size: 1rem;
-	margin: 0 10px;
-	font-family: 'Montserrat';
-}
+    /*tekter*/
+    h1,
+    h2,
+    h3 {
+        font-family: dico-typewriter-slab, mono;
+        font-weight: 400;
+        font-style: normal;
+    }
 
-button:hover {
-	background-color: #6EAE9F;
-	cursor: pointer;
-	color: white;
-	border: 1px solid transparent;
-}
+    button {
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #2F675A;
+        font-size: 1rem;
+        margin: 0 10px;
+        font-family: 'Montserrat';
+    }
 
-.indhold h3 {
-	text-align: initial;
+    button:hover {
+        background-color: #6EAE9F;
+        cursor: pointer;
+        color: white;
+        border: 1px solid transparent;
+    }
+
+    .indhold h3 {
+        text-align: initial;
+    }
 }
